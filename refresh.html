@@ -1,0 +1,35 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Test</title>
+    <meta name="viewport" content="width=device-width">
+
+    <script type="text/javascript" async src="prebid.js"></script>
+</head>
+<body>
+    
+
+    <div id="container" style="width:50%;height:auto;margin: 0 auto;">
+        <div style="font-size:24px;font-weight: bold" align="center">Test Page</div>
+
+        <h1>Adunit</h1>
+    	<div data-aaad='true' data-aa-adunit='/19191187/spa_test'></div>
+    	<p><button style="font-size:24px;" onclick='refresh();'>Refresh</button></p>
+
+    </div>
+
+
+    <script type="text/javascript">
+        function refresh(){
+          (window.adn = window.adn || {"cmd":[]}).cmd.push(function(){ 
+                                                                window.adn.refreshAdunits(['/19191187/spa_test']);
+                                                            });             
+        }
+    </script>
+
+
+</body>
+</html>
+
+
